@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ficha de Produto</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 20px;
+    }
+    .tabs {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #ccc;
+    }
+    .tab {
+      padding: 10px;
+      cursor: pointer;
+      border: none;
+      background: none;
+      font-weight: 600;
+      color: #444;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: color 0.3s;
+    }
+    .tab.active {
+      border-bottom: 3px solid #0078d4;
+      color: #0078d4;
+    }
+    .tab i {
+      color: inherit;
+      transition: color 0.3s;
+    }
+    .tab-content {
+      display: none;
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    .tab-content.active {
+      display: block;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-label {
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      margin-bottom: 4px;
+      color: #505050;
+    }
+    .form-value {
+      background: #f1f3f4;
+      padding: 10px;
+      border-radius: 6px;
+      font-family: monospace;
+      color: #2d2d2d;
+    }
+    .icon {
+      font-size: 12px;
+      color: #605e5c;
+    }
+    .styled-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "Segoe UI", sans-serif;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      margin-top: 1rem;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .styled-table thead {
+      background-color: #57c1b2;
+      color: white;
+      text-align: left;
+    }
+    .styled-table th,
+    .styled-table td {
+      padding: 12px 16px;
+      font-size: 14px;
+    }
+    .styled-table tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+  <div class="tabs">
+    <button class="tab active" onclick="showTab('identificacao')"><i class="fas fa-id-badge icon"></i>Identificação</button>
+    <button class="tab" onclick="showTab('escopo')"><i class="fas fa-list icon"></i>Escopo</button>
+    <button class="tab" onclick="showTab('estrategia')"><i class="fas fa-bullseye icon"></i>Estratégia</button>
+    <button class="tab" onclick="showTab('qualificacao')"><i class="fas fa-check-circle icon"></i>Qualificação</button>
+  </div>
+
+  <div id="identificacao" class="tab-content active">
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-box icon"></i>Nome do Produto</label>
+      <div class="form-value">Planejamento Estratégico
+
+
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-align-left icon"></i>Descrição do Produto</label>
+      <p class="form-value">
+Define os objetivos, metas e ações que irão orientar a empresa no curto, médio e longo prazo, alinhando as decisões com sua visão de futuro. Ajuda a priorizar recursos, melhorar o posicionamento no mercado e tomar decisões mais embasadas. Garante clareza na direção do negócio, maior competitividade, crescimento sustentável e agilidade para se adaptar às mudanças e aproveitar novas oportunidades.
+
+
+      </p>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-barcode icon"></i>Código</label>
+      <div class="form-value">FIN006</div>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-sitemap icon"></i>Área</label>
+      <div class="form-value">Consultoria</div>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-question-circle icon"></i>Classificação BCG</label>
+      <div class="form-value">Ponto de Interrrogação</div>
+    </div>
+    </div>
+
+  </div>
+
+  <div id="escopo" class="tab-content">
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-file-alt icon"></i>Escopo</label>
+      <div class="form-value">
+<ol data-start="501" data-end="1266">
+<li data-start="501" data-end="648" class="">
+<p data-start="504" data-end="528" class="">Diagnóstico Estratégico:</p>
+<ul data-start="532" data-end="648">
+<li data-start="532" data-end="571" class="">
+<p data-start="534" data-end="571" class="">Análise da situação atual da empresa.</p>
+</li>
+<li data-start="575" data-end="648" class="">
+<p data-start="577" data-end="648" class="">Identificação de pontos fortes, fracos, oportunidades e ameaças (SWOT).</p>
+</li>
+</ul>
+</li>
+<li data-start="649" data-end="807" class="">
+<p data-start="652" data-end="683" class="">Definição de Objetivos e Metas:</p>
+<ul data-start="687" data-end="807">
+<li data-start="687" data-end="755" class="">
+<p data-start="689" data-end="755" class="">Estabelecimento de metas claras e alinhadas com a visão de futuro.</p>
+</li>
+<li data-start="759" data-end="807" class="">
+<p data-start="761" data-end="807" class="">Desdobramento dos objetivos em planos de ação.</p>
+</li>
+</ul>
+</li>
+<li data-start="808" data-end="981" class="">
+<p data-start="811" data-end="836" class="">Formulação da Estratégia:</p>
+<ul data-start="840" data-end="981">
+<li data-start="840" data-end="922" class="">
+<p data-start="842" data-end="922" class="">Desenvolvimento de estratégias de crescimento, diversificação e competitividade.</p>
+</li>
+<li data-start="926" data-end="981" class="">
+<p data-start="928" data-end="981" class="">Identificação dos recursos necessários para execução.</p>
+</li>
+</ul>
+</li>
+<li data-start="982" data-end="1134" class="">
+<p data-start="985" data-end="1015" class="">Implementação e Monitoramento:</p>
+<ul data-start="1019" data-end="1134">
+<li data-start="1019" data-end="1067" class="">
+<p data-start="1021" data-end="1067" class="">Definição de indicadores de desempenho (KPIs).</p>
+</li>
+<li data-start="1071" data-end="1134" class="">
+<p data-start="1073" data-end="1134" class="">Acompanhamento periódico para garantir a execução dos planos.</p>
+</li>
+</ul>
+</li>
+<li data-start="1135" data-end="1266" class="">
+<p data-start="1138" data-end="1156" class="">Ajustes e Revisão:</p>
+<ul data-start="1160" data-end="1266">
+<li data-start="1160" data-end="1217" class="">
+<p data-start="1162" data-end="1217" class="">Revisão estratégica contínua para adaptação ao mercado.</p>
+</li>
+<li data-start="1221" data-end="1266" class="">
+<p data-start="1223" data-end="1266" class="">Suporte na tomada de decisões estratégicas.</p>
+</li>
+</ul>
+</li>
+</ol>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-list-check icon"></i>Problemas que Resolve
+      </label>
+      <div class="form-value">
+<ol data-start="1307" data-end="1616">
+<li data-start="1307" data-end="1356" class="">
+<p data-start="1310" data-end="1356" class="">Falta de clareza nos objetivos de longo prazo.</p>
+</li>
+<li data-start="1357" data-end="1403" class="">
+<p data-start="1360" data-end="1403" class="">Direção estratégica confusa ou inexistente.</p>
+</li>
+<li data-start="1404" data-end="1453" class="">
+<p data-start="1407" data-end="1453" class="">Dificuldade na definição de metas alcançáveis.</p>
+</li>
+<li data-start="1454" data-end="1492" class="">
+<p data-start="1457" data-end="1492" class="">Priorização inadequada de recursos.</p>
+</li>
+<li data-start="1493" data-end="1544" class="">
+<p data-start="1496" data-end="1544" class="">Incapacidade de adaptação a mudanças no mercado.</p>
+</li>
+<li data-start="1545" data-end="1616" class="">
+<p data-start="1548" data-end="1616" class="">Ausência de uma visão clara e alinhada com o crescimento da empresa.</p>
+</li>
+</ol>
+      </div>
+
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="	fas fa-trophy icon"></i>Benefícios
+      </label>
+      <div class="form-value">
+<ol data-start="1646" data-end="1914">
+<li data-start="1646" data-end="1706" class="">
+<p data-start="1649" data-end="1706" class="">Alinhamento das ações da empresa com sua visão de futuro.</p>
+</li>
+<li data-start="1707" data-end="1759" class="">
+<p data-start="1710" data-end="1759" class="">Otimização de recursos e priorização estratégica.</p>
+</li>
+<li data-start="1760" data-end="1811" class="">
+<p data-start="1763" data-end="1811" class="">Maior competitividade e crescimento sustentável.</p>
+</li>
+<li data-start="1812" data-end="1862" class="">
+<p data-start="1815" data-end="1862" class="">Capacidade de tomar decisões embasadas e ágeis.</p>
+</li>
+<li data-start="1863" data-end="1914" class="">
+<p data-start="1866" data-end="1914" class="">Identificação de novas oportunidades de mercado.</p>
+</li>
+</ol>
+      </div>
+    </div>
+  </div>
+
+  <div id="estrategia" class="tab-content">
+
+    <div class="form-group">
+        <label class="form-label"><i class="fas fa-fire icon"></i>Prioridade de Venda</label>
+        <div class="form-value">Média</div>
+      </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-lightbulb icon"></i>Quando Ofertar</label>
+      <div class="form-value">
+<ol data-start="1948" data-end="2288">
+<li data-start="1948" data-end="2011" class="">
+<p data-start="1951" data-end="2011" class="">Empresas que não possuem uma estratégia clara e documentada.</p>
+</li>
+<li data-start="2012" data-end="2085" class="">
+<p data-start="2015" data-end="2085" class="">Negócios que enfrentam dificuldades para alcançar metas estabelecidas.</p>
+</li>
+<li data-start="2086" data-end="2139" class="">
+<p data-start="2089" data-end="2139" class="">Empresas que desejam crescer de forma sustentável.</p>
+</li>
+<li data-start="2140" data-end="2209" class="">
+<p data-start="2143" data-end="2209" class="">Negócios que passam por mudanças de mercado e precisam se adaptar.</p>
+</li>
+<li data-start="2210" data-end="2288" class="">
+<p data-start="2213" data-end="2288" class="">Organizações que enfrentam dificuldades na tomada de decisões estratégicas.</p>
+</li>
+</ol>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-gem icon"></i>Proposta de Valor</label>
+      <div class="form-value">Garantimos que sua empresa tenha uma estratégia clara e bem definida, com objetivos alcançáveis, metas mensuráveis e ações práticas para crescer de forma competitiva e sustentável. Com nosso apoio, você terá uma visão clara do futuro, identificará oportunidades, minimizará riscos e tomará decisões mais assertivas.
+
+
+
+
+
+
+
+    </div>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-shopping-basket icon"></i>Cross-selling</label>
+      <div class="form-value">
+<table class="styled-table">
+    <thead>
+        <tr>
+            <th>Produto Complementar</th>
+            <th>Justificativa da Conexão</th>
+            <th>Área Responsável</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Diagnóstico Empresarial</td>
+            <td>Complementa a estratégia com uma visão clara da situação atual da empresa.</td>
+            <td>Consultoria Empresarial</td>
+        </tr>
+        <tr>
+            <td>Gestão de Resultados Financeiros</td>
+            <td>Garante que os resultados financeiros estejam alinhados aos objetivos estratégicos.</td>
+            <td>Consultoria Empresarial</td>
+        </tr>
+        <tr>
+            <td>Avaliação de Maturidade de Gestão</td>
+            <td>Avalia a capacidade da empresa de implementar o planejamento estratégico.</td>
+            <td>Consultoria Empresarial</td>
+        </tr>
+        <tr>
+            <td>Planejamento Orçamentário e Fluxo de Caixa</td>
+            <td>Alinha o orçamento aos objetivos estratégicos definidos.</td>
+            <td>Consultoria Empresarial</td>
+        </tr>
+        <tr>
+            <td>Valuation</td>
+            <td>Permite analisar o valor da empresa com base na estratégia definida.</td>
+            <td>Consultoria Empresarial</td>
+        </tr>
+        <tr>
+            <td>Reorganização Societária</td>
+            <td>Garante que a estrutura societária seja compatível com a estratégia da empresa.</td>
+            <td>Jurídico</td>
+        </tr>
+        <tr>
+            <td>Due Diligence</td>
+            <td>Avalia riscos antes de implementar uma nova estratégia.</td>
+            <td>Jurídico</td>
+        </tr>
+        <tr>
+            <td>Gestão e Elaboração de Contratos</td>
+            <td>Garante que os contratos estejam alinhados com a estratégia da empresa.</td>
+            <td>Jurídico</td>
+        </tr>
+        <tr>
+            <td>Compliance e Antissuborno</td>
+            <td>Garante conformidade com as normas legais e éticas da empresa.</td>
+            <td>Jurídico</td>
+        </tr>
+        <tr>
+            <td>BPO Financeiro</td>
+            <td>Permite a empresa focar na estratégia enquanto delega a operação financeira.</td>
+            <td>Consultoria Empresarial</td>
+        </tr>
+        <tr>
+            <td>Consultoria e Assessoria Contábil/Tributária</td>
+            <td>Garante que a empresa esteja em conformidade fiscal e contábil.</td>
+            <td>Contabilidade</td>
+        </tr>
+        <tr>
+            <td>Planejamento Sucessório e Patrimonial</td>
+            <td>Garante a continuidade da empresa com segurança jurídica.</td>
+            <td>Jurídico</td>
+        </tr>
+    </tbody>
+</table>
+
+      </div>
+    </div>
+  </div>
+
+  <div id="qualificacao" class="tab-content">
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-briefcase icon"></i>Regime Tributário Atendimento</label>
+      <div class="form-value">Lucro Real, Lucro Presumido </div>
+    </div>
+    <div class="form-group">
+        <label class="form-label"><i class="fas fa-sync-alt icon"></i>Tipo de Cobrança</label>
+        <div class="form-value">Pontual</div>
+      </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-globe icon"></i>Abrangência Geográfica</label>
+      <div class="form-value">Nacional</div>
+    </div>
+
+    <div class="form-group">
+        <label class="form-label"><i class=" fas fa-file-invoice-dollar icon"></i>Faturamento Ideal</label>
+        <div class="form-value">Empresas com faturamento acima de R$ 4,8 milhões/ano, com capacidade para implementar ações estratégicas e investir em crescimento.</div>
+      </div>
+
+    <div class="form-group">
+        <label class="form-label"><i class="fas fa-paperclip icon"></i>Documentos Solicitados</label>
+        <div class="form-value">
+<ol data-start="4682" data-end="4989">
+<li data-start="4682" data-end="4774" class="">
+<p data-start="4685" data-end="4774" class="">Informações básicas sobre estratégia, finanças, processos, pessoas, governança e mercado.</p>
+</li>
+<li data-start="4775" data-end="4836" class="">
+<p data-start="4778" data-end="4836" class="">Demonstrativos financeiros (DRE, Balanço, Fluxo de Caixa).</p>
+</li>
+<li data-start="4837" data-end="4884" class="">
+<p data-start="4840" data-end="4884" class="">Estrutura organizacional e processos atuais.</p>
+</li>
+<li data-start="4885" data-end="4940" class="">
+<p data-start="4888" data-end="4940" class="">Histórico de resultados e indicadores de desempenho.</p>
+</li>
+<li data-start="4941" data-end="4989" class="">
+<p data-start="4944" data-end="4989" class="">Relatórios de análise de mercado (se houver).</p>
+</li>
+</ol> </div>
+        
+              </div>
+
+              <div class="form-group">
+                <label class="form-label"><i class=" fas fa-industry icon"></i>Setores ICP</label>
+                <div class="form-value">
+<ul data-start="5046" data-end="5193">
+<li data-start="5046" data-end="5078" class="">
+<p data-start="5048" data-end="5078" class="">Transporte (clientes da base).</p>
+</li>
+<li data-start="5079" data-end="5092" class="">
+<p data-start="5081" data-end="5092" class="">Indústrias.</p>
+</li>
+<li data-start="5093" data-end="5104" class="">
+<p data-start="5095" data-end="5104" class="">Comércio.</p>
+</li>
+<li data-start="5105" data-end="5116" class="">
+<p data-start="5107" data-end="5116" class="">Serviços.</p>
+</li>
+<li data-start="5117" data-end="5153" class="">
+<p data-start="5119" data-end="5153" class="">Empresas de tecnologia e inovação.</p>
+</li>
+<li data-start="5154" data-end="5193" class="">
+<p data-start="5156" data-end="5193" class="">Organizações de médio e grande porte.</p>
+</li>
+</ul>        </div>
+              <div class="form-group">
+                <label class="form-label"><i class="fas fa-exclamation-circle icon"></i>Objeções Mapeadas</label>
+                <div class="form-value">
+<table class="styled-table">
+    <thead>
+        <tr>
+            <th>Objeção</th>
+            <th>O que o cliente quer dizer</th>
+            <th>Como contornar</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>“Não vejo necessidade de um planejamento estratégico.”</td>
+            <td>Acredita que o negócio está bem como está.</td>
+            <td>Mostrar que a falta de estratégia limita o crescimento e aumenta os riscos.</td>
+        </tr>
+        <tr>
+            <td>“Isso parece complexo demais.”</td>
+            <td>Medo de que o processo seja confuso ou demorado.</td>
+            <td>Garantir que a consultoria será prática, objetiva e adaptada à realidade do cliente.</td>
+        </tr>
+        <tr>
+            <td>“Já temos um plano na cabeça.”</td>
+            <td>Acredita que já tem uma estratégia, mesmo que não seja estruturada.</td>
+            <td>Explicar que uma estratégia documentada é mais eficaz e fácil de acompanhar.</td>
+        </tr>
+        <tr>
+            <td>“Não temos orçamento para isso agora.”</td>
+            <td>Percepção de que é um custo alto.</td>
+            <td>Mostrar que o planejamento estratégico é um investimento que gera retorno.</td>
+        </tr>
+        <tr>
+            <td>“Estamos em um bom momento, não precisamos disso.”</td>
+            <td>Acredita que o bom momento é suficiente.</td>
+            <td>Explicar que o planejamento garante que o sucesso seja sustentável.</td>
+        </tr>
+    </tbody>
+</table>
+
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label"><i class=" fas fa-industry icon"></i>Personas</label>
+                <div class="form-value">
+                    <ul data-start="107" data-end="257">
+                                               <li data-start="174" data-end="257" class="" style="">
+                        <p data-start="176" data-end="257" class=""><strong data-start="176" data-end="190">Decisores:</strong> Sócios e Proprietários de Empresas.</p>
+                        </li>
+                        </ul> </div>
+              </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-star-half-alt icon"></i>Diferenciais</label>
+      <div class="form-value">A Funcional oferece o serviço de Planejamento Estratégico com metodologia estruturada, visão estratégica e atendimento consultivo, garantindo que o cliente tenha um plano claro e eficaz para alcançar seus objetivos de curto, médio e longo prazo.
+
+Nosso diferencial está na realização de diagnóstico empresarial, definição de missão, visão e valores, análise SWOT (forças, fraquezas, oportunidades e ameaças), estabelecimento de metas e indicadores de desempenho (KPIs) e construção de um plano de ação prático e mensurável, assegurando clareza, alinhamento e crescimento sustentável para o cliente.
+        </div>
+    </div>
+  </div>
+
+  <script>
+    function showTab(id) {
+      document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+      document.querySelector(`.tab[onclick="showTab('${id}')"]`).classList.add('active');
+    }
+  </script>
+</body>
+</html>
